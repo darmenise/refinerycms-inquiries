@@ -9,6 +9,7 @@
 <%=raw t('.phone') %>: <%= @inquiry.phone %>
 <%=raw t('.message') %>:
 <%=raw strip_tags(@inquiry.message) %>
+<%= raw @request.original_url %>
 
 <%=raw t('.inquiry_ends') %>
 

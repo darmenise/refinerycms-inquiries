@@ -15,6 +15,7 @@ module Refinery
 
       def notification(inquiry, request)
         @inquiry = inquiry
+        @request = request
         mail :subject   => Refinery::Inquiries::Setting.notification_subject,
              :to        => Refinery::Inquiries::Setting.notification_recipients,
              :from      => '"' + ::I18n.t('from_name',
